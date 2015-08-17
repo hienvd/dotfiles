@@ -36,6 +36,7 @@ let g:utl_cfg_hdl_scm_http_system = "silent !google-chrome %u &"
 
 set number
 set smartindent
+set expandtab
 set tabstop=2
 set incsearch
 
