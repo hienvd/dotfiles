@@ -174,12 +174,6 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-let g:dbext_default_profile_cm_main_20141110 = 'type=PGSQL:user=postgres:passwd=postgres:host=172.16.9.54:port=6432:dbname=cm_main_20141110'
-let g:dbext_default_profile_cm_holy= 'type=PGSQL:user=postgres:passwd=postgres:host=172.16.9.54:port=6432:dbname=cm_holy'
-let g:dbext_default_profile_cm_org_test= 'type=PGSQL:user=postgres:passwd=postgres:host=172.16.9.54:port=6432:dbname=cm_org_test'
-let g:dbext_default_profile_cm_main_test= 'type=PGSQL:user=postgres:passwd=postgres:host=172.16.9.54:port=6432:dbname=load_data_test'
-
-
 let g:ctrlp_working_path_mode = 'a'
 
 syntax enable
