@@ -1,0 +1,34 @@
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+call plug#end()
+
+"----------------------------------------------
+" General settings
+"----------------------------------------------
+filetype plugin indent on
+set nocompatible
+set autoindent                    " take indent for new line from previous line
+set smartindent                   " enable smart indentation
+set autoread
+set clipboard=unnamed
+" set number
+set relativenumber
+set expandtab                     " expands tabs to spaces
+set softtabstop=2
+set tabstop=2
+set shiftwidth=2
+set ignorecase
+set smartcase
+set encoding=UTF-8
+set nowrap
+
+syntax enable
+
+let g:strip_whitespace_on_save = 1
+set ttimeout
+set ttimeoutlen=0
+
+"----------------------------------------------
+"" Layer: Themes
+"----------------------------------------------
+set background=dark
