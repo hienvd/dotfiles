@@ -1,5 +1,15 @@
 call plug#begin('~/.local/share/nvim/plugged')
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-surround'
+Plug 'dense-analysis/ale'
+Plug 'easymotion/vim-easymotion'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'leafgarland/typescript-vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 "----------------------------------------------
@@ -11,7 +21,6 @@ set autoindent                    " take indent for new line from previous line
 set smartindent                   " enable smart indentation
 set autoread
 set clipboard=unnamed
-" set number
 set relativenumber
 set expandtab                     " expands tabs to spaces
 set softtabstop=2
@@ -21,8 +30,12 @@ set ignorecase
 set smartcase
 set encoding=UTF-8
 set nowrap
+set incsearch
+set hlsearch
+set mouse=a
 
-syntax enable
+syntax on
+let mapleader = "\<Space>"
 
 let g:strip_whitespace_on_save = 1
 set ttimeout
@@ -32,3 +45,21 @@ set ttimeoutlen=0
 "" Layer: Themes
 "----------------------------------------------
 set background=dark
+colorscheme dracula
+
+"----------------------------------------------
+"" Auto open NERDTREE
+"----------------------------------------------
+"autocmd VimEnter * NERDTree | wincmd p
+
+" FZF
+nnoremap <silent> <C-p> :GFiles<CR>
+
+" NERDTREE
+nnoremap <silent> <Leader>ft :NERDTreeToggle<CR>                      " File > Tree
+nnoremap <silent> <Leader>fT :NERDTreeFind<CR>                        " File > Tree > Find
+
+let g:ale_completion_enabled = 1
+
+" Buffer
+nnoremap <silent> <Leader>bb :Buffer<CR>    " List Buffers
