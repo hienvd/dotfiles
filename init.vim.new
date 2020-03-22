@@ -10,6 +10,9 @@ Plug 'easymotion/vim-easymotion'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-commentary'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 "----------------------------------------------
