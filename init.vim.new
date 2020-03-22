@@ -11,8 +11,9 @@ Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'leafgarland/typescript-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary' "gc gcc
 Plug 'Yggdroot/indentLine'
+Plug 'mhinz/vim-startify' "Fancy start screen
 call plug#end()
 
 "----------------------------------------------
