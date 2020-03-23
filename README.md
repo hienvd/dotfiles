@@ -12,3 +12,6 @@ alias ctags="`brew --prefix`/bin/ctags"
 ```
 ctags -R --output-format=json --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths) -f .tags
 ```
+
+### COC.NVIM
+http://blog.jamesnewton.com/setting-up-coc-nvim-for-ruby-development
