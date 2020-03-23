@@ -14,6 +14,7 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-commentary' "gc gcc
 Plug 'Yggdroot/indentLine'
 Plug 'mhinz/vim-startify' "Fancy start screen
+Plug 'neoclide/coc.nvim', {'branch': 'release'} "Code completion
 call plug#end()
 
 "----------------------------------------------
