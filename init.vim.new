@@ -39,6 +39,7 @@ set nowrap
 set incsearch
 set hlsearch
 set mouse=a
+set foldmethod=indent
 
 syntax on
 let mapleader = "\<Space>"
