@@ -60,7 +60,7 @@ colorscheme dracula
 "autocmd VimEnter * NERDTree | wincmd p
 
 " FZF
-nnoremap <silent> <C-p> :GFiles<CR>
+nnoremap <silent> <C-p> :GFiles --exclude-standard --others --cached<CR>
 
 " NERDTREE
 nnoremap <silent> <Leader>ft :NERDTreeToggle<CR>                      " File > Tree
