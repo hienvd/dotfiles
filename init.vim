@@ -21,6 +21,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim'
 Plug 'arzg/vim-colors-xcode' "A vim colorscheme
 Plug 'ryanoasis/vim-devicons' "icons
+Plug 'kassio/neoterm'
+Plug 'szw/vim-maximizer'
 call plug#end()
 
 "----------------------------------------------
@@ -62,6 +64,9 @@ nnoremap <F4> :noh<CR>
 
 "Map colon to semicolon
 nnoremap ; :
+
+" Map ESC to Terminal exit
+tnoremap jk <C-\><C-n>
 
 "----------------------------------------------
 "" Layer: Themes
@@ -158,3 +163,13 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+"----------------------------------------------
+"" VIM-TEST Configurations 
+"----------------------------------------------
+let test#strategy = 'neoterm'
+let g:neoterm_default_mod = 'vertical'
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+
