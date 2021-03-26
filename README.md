@@ -15,3 +15,6 @@ ctags -R --output-format=json --languages=ruby --exclude=.git --exclude=log . $(
 
 ### COC.NVIM
 http://blog.jamesnewton.com/setting-up-coc-nvim-for-ruby-development
+
+### NVIM
+`~/.config/nvim/init.vim`
