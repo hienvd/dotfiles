@@ -23,6 +23,8 @@ Plug 'arzg/vim-colors-xcode' "A vim colorscheme
 Plug 'ryanoasis/vim-devicons' "icons
 Plug 'kassio/neoterm'
 Plug 'szw/vim-maximizer'
+Plug 'kchmck/vim-coffee-script'
+Plug '~/code/vim-viec'
 call plug#end()
 
 "----------------------------------------------
@@ -173,3 +175,4 @@ nmap <silent> <leader>tf :TestFile<CR>
 nmap <silent> <leader>tn :TestNearest<CR>
 nmap <silent> <leader>tl :TestLast<CR>
 
+augroup filetype javascript syntax=javascript
