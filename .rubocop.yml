@@ -1,0 +1,25 @@
+Style/Documentation:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Layout/TrailingEmptyLines:
+  Enable: false
+Metrics/BlockLength:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Layout/HashAlignment:
+  EnforcedColonStyle: table
+  EnforcedHashRocketStyle: table
+Naming/MethodParameterName:
+  MinNameLength: 2
